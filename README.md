@@ -33,8 +33,8 @@ TeamSync stands out from other productivity tools because it was designed by stu
 
 For any inquiries, please reach out to us:
 
-a@baharon.xyz 
+a@baharon.xyz
 
----
+aliksa12345@outlook.com
 
 © 2025 TeamSync | Developed by Abdulrahman Baharoon & Ali Alamaodi | CPIS-358 Project
