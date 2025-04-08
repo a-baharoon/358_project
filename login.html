@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TeamSync</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="TeamSync Logo" usemap="#logo-map">
+            <map name="logo-map">
+                <area shape="rect" coords="0,0,200,200" href="about.html" alt="About Us">
+            </map>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <h1>Login to Your Account</h1>
+            <div class="auth-container">
+                <form id="login-form" action="#" method="post" onsubmit="return validateLoginForm()">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <span id="email-error" class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <span id="password-error" class="error-message"></span>
+                    </div>
+                    <div class="form-group remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Login</button>
+                    <div id="login-message" class="message-box"></div>
+                </form>
+                <div class="auth-divider">
+                    <span>OR</span>
+                </div>
+                <div class="social-login">
+                    <button class="btn btn-social btn-google">
+                        <span class="social-icon">G</span>
+                        Login with Google
+                    </button>
+                    <button class="btn btn-social btn-facebook">
+                        <span class="social-icon">f</span>
+                        Login with Facebook
+                    </button>
+                </div>
+                <div class="auth-links">
+                    <a href="#" id="forgot-password">Forgot password?</a>
+                    <a href="signup.html">Don't have an account? Sign up</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo-small.png" alt="TeamSync Logo">
+                <p>TeamSync © 2025</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@teamsync.com</p>
+                <p>Phone: +966 12 345 6789</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Embedded JavaScript for login form validation
+        function validateLoginForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            let isValid = true;
+            
+            // Reset error messages
+            document.getElementById('email-error').textContent = '';
+            document.getElementById('password-error').textContent = '';
+            
+            // Validate email
+            if (!email || !email.includes('@') || !email.includes('.')) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email address';
+                isValid = false;
+            }
+            
+            // Validate password
+            if (!password || password.length < 6) {
+                document.getElementById('password-error').textContent = 'Password must be at least 6 characters';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Show success message (in a real app, this would be a server request)
+                const messageBox = document.getElementById('login-message');
+                messageBox.textContent = 'Login successful! Redirecting...';
+                messageBox.className = 'message-box success';
+                
+                // Simulate redirect after successful login
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 2000);
+            }
+            
+            return false; // Prevent actual form submission
+        }
+        
+        // Add animation effect to form
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('login-form');
+            form.classList.add('fade-in');
+            
+            // Add functionality to forgot password link
+            document.getElementById('forgot-password').addEventListener('click', function(e) {
+                e.preventDefault();
+                const email = document.getElementById('email').value;
+                let message = '';
+                
+                if (email && email.includes('@') && email.includes('.')) {
+                    message = `Password reset link sent to ${email}`;
+                    document.getElementById('login-message').className = 'message-box success';
+                } else {
+                    message = 'Please enter a valid email address first';
+                    document.getElementById('login-message').className = 'message-box error';
+                }
+                
+                document.getElementById('login-message').textContent = message;
+            });
+        });
+    </script>
+</body>
+</html>
