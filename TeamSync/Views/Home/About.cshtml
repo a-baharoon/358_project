@@ -1,0 +1,172 @@
+﻿@{
+    ViewData["Title"] = "About Us - TeamSync";
+}
+
+<section class="about-hero">
+    <div class="about-hero-content">
+        <h1>Our Mission</h1>
+        <p>At TeamSync, we're on a mission to revolutionize how student teams collaborate, making teamwork more efficient, transparent, and enjoyable.</p>
+    </div>
+</section>
+
+<section id="our-story" class="our-story">
+    <h2>Our Story</h2>
+    <div class="story-content">
+        <div class="story-text">
+            <p>TeamSync was born out of frustration experienced by college students struggling with team project coordination. As students ourselves, we faced the common challenges of uneven workload distribution, missed deadlines, and lack of accountability.</p>
+            <p>We created TeamSync as a solution to these problems, focusing on creating a platform that makes teamwork transparent, engaging, and productive.</p>
+            <p>Since our launch in 2025, thousands of students across universities in Saudi Arabia have used TeamSync to transform how they collaborate on assignments and projects.</p>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+        <article class="team-member">
+            <div class="member-photo">
+                <img src="~/images/member1.png" alt="Abdulrahman Baharoon" onerror="this.src='/images/placeholder-profile.jpg'; this.onerror=null;">
+            </div>
+            <h3>Abdulrahman Baharoon</h3>
+            <p class="member-role">Founder & CEO</p>
+            <p>Visionary leader with a passion for innovative solutions to enhance team productivity and collaboration.</p>
+        </article>
+        <article class="team-member">
+            <div class="member-photo">
+                <img src="~/images/member2.png" alt="Ali Alamaodi" onerror="this.src='/images/placeholder-profile.jpg'; this.onerror=null;">
+            </div>
+            <h3>Ali Alamoudi</h3>
+            <p class="member-role">Implementation Specialist</p>
+            <p>Dedicated team member who excels at implementing ideas with precision and reliability.</p>
+        </article>
+    </div>
+</section>
+
+<section id="values" class="values-section">
+    <h2>Our Core Values</h2>
+    <div class="values-container">
+        <div class="value-card">
+            <h3>Transparency</h3>
+            <p>We believe in clear, open communication and visibility of contributions.</p>
+        </div>
+        <div class="value-card">
+            <h3>Accountability</h3>
+            <p>We promote personal responsibility and recognition for work accomplished.</p>
+        </div>
+        <div class="value-card">
+            <h3>Engagement</h3>
+            <p>We create interactive experiences that make teamwork enjoyable.</p>
+        </div>
+        <div class="value-card">
+            <h3>Simplicity</h3>
+            <p>We design intuitive tools with minimal learning curves.</p>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item" id="faq-1">
+            <h3 class="faq-question">How does TeamSync track working time?</h3>
+            <div class="faq-answer">
+                <p>TeamSync uses an interactive timer that team members activate when they start working. The system tracks active time and compiles statistics for the team leaderboard.</p>
+            </div>
+        </div>
+        <div class="faq-item" id="faq-2">
+            <h3 class="faq-question">What are the audio alerts for?</h3>
+            <div class="faq-answer">
+                <p>The random audio alerts serve two purposes: they keep team members engaged during work sessions and provide a fun, gamified element to the teamwork experience.</p>
+            </div>
+        </div>
+        <div class="faq-item" id="faq-3">
+            <h3 class="faq-question">Can I use TeamSync for individual work?</h3>
+            <div class="faq-answer">
+                <p>Absolutely! While TeamSync is designed for team collaboration, many students use it for individual productivity tracking as well.</p>
+            </div>
+        </div>
+        <div class="faq-item" id="faq-4">
+            <h3 class="faq-question">Is TeamSync free for students?</h3>
+            <div class="faq-answer">
+                <p>Yes, TeamSync offers a free tier for students with all essential features. Premium features are available for a small monthly subscription.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> info@teamsync.com</p>
+            <p><strong>Phone:</strong> +966 12 345 6789</p>
+            <p><strong>Address:</strong> King Abdulaziz University, Jeddah, Saudi Arabia</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+
+                    const answer = this.nextElementSibling;
+
+                    const isOpen = answer.style.maxHeight !== "0px" && answer.style.maxHeight !== "";
+
+                    document.querySelectorAll('.faq-answer').forEach(item => {
+                        item.style.maxHeight = "0px";
+                    });
+
+                    if (!isOpen) {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    }
+                });
+            });
+
+            const firstAnswer = document.querySelector('.faq-answer');
+            if (firstAnswer) {
+                firstAnswer.style.maxHeight = firstAnswer.scrollHeight + "px";
+            }
+
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! We will get back to you soon.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+}

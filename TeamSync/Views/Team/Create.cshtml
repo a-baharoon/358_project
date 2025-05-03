@@ -1,0 +1,40 @@
+﻿<!-- Views/Team/Create.cshtml -->
+@model TeamSync.ViewModels.TeamViewModel
+@{
+    ViewData["Title"] = "Create Team - TeamSync";
+}
+
+<div class="form-container">
+    <h1>Create New Team</h1>
+
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="message-box error"></div>
+
+        <div class="form-group">
+            <label asp-for="TeamName"></label>
+            <input asp-for="TeamName" class="form-control" placeholder="Enter team name" />
+            <span asp-validation-for="TeamName" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Describe your team's purpose"></textarea>
+            <span asp-validation-for="Description" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="teamLogo">Team Logo</label>
+            <input type="file" id="teamLogo" name="teamLogo" accept="image/*" class="form-control" />
+            <small class="form-text text-muted">Optional: Upload a logo for your team</small>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Create Team</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

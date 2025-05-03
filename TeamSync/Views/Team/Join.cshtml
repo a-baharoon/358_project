@@ -1,0 +1,43 @@
+﻿<!-- Views/Team/Join.cshtml -->
+@model List<TeamSync.Models.Team>
+@{
+    ViewData["Title"] = "Join a Team - TeamSync";
+}
+
+<div class="teams-container">
+    <div class="teams-header">
+        <h1>Join a Team</h1>
+    </div>
+
+    @if (Model.Any())
+    {
+            <div class="teams-grid">
+            @foreach (var team in Model)
+            {
+                        <div class="team-card">
+                    @if (!string.IsNullOrEmpty(team.TeamLogoPath))
+                    {
+                                    <img src="~/@team.TeamLogoPath" alt="@team.TeamName Logo" class="team-logo" />
+                    }
+                    else
+                    {
+                                    <div class="team-logo-placeholder">@team.TeamName.Substring(0, 1)</div>
+                    }
+                            <h3>@team.TeamName</h3>
+                            <p>@(string.IsNullOrEmpty(team.Description) ? "No description" : team.Description)</p>
+                            <form asp-action="JoinTeam" asp-route-id="@team.TeamId" method="post">
+                        @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-primary btn-full">Join Team</button>
+                            </form>
+                        </div>
+            }
+            </div>
+    }
+    else
+    {
+            <div class="empty-state">
+                <p>There are no available teams to join.</p>
+                <a asp-action="Create" class="btn btn-primary">Create a Team</a>
+            </div>
+    }
+</div>

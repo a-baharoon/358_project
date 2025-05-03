@@ -1,0 +1,99 @@
+﻿@model TeamSync.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<section class="auth-section">
+    <h1>Create Your TeamSync Account</h1>
+    <div class="auth-container">
+        <form asp-action="Register" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="FullName"></label>
+                <input asp-for="FullName" class="form-control" placeholder="Enter your full name" />
+                <span asp-validation-for="FullName" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" placeholder="Enter your email" />
+                <span asp-validation-for="Email" class="error-message"></span>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" placeholder="Create a password" />
+                    <span asp-validation-for="Password" class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm your password" />
+                    <span asp-validation-for="ConfirmPassword" class="error-message"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="University"></label>
+                <select asp-for="University" class="form-control">
+                    <option value="">Select your university</option>
+                    <option value="King Abdulaziz University">King Abdulaziz University</option>
+                    <option value="King Saud University">King Saud University</option>
+                    <option value="King Fahd University of Petroleum & Minerals">King Fahd University of Petroleum & Minerals</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span asp-validation-for="University" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Account Type</label>
+                <div class="radio-group">
+                    <input type="radio" id="student" name="AccountType" value="Student" checked />
+                    <label for="student">Student</label>
+
+                    <input type="radio" id="team-leader" name="AccountType" value="TeamLeader" />
+                    <label for="team-leader">Team Leader</label>
+                </div>
+                <span asp-validation-for="AccountType" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="profilePicture">Profile Picture (Optional)</label>
+                <input type="file" id="profilePicture" name="profilePicture" class="form-control" accept="image/*" />
+            </div>
+
+            <div class="form-group terms">
+                <input asp-for="TermsAccepted" />
+                <label asp-for="TermsAccepted">I agree to the <a href="#" id="terms-link">Terms and Conditions</a></label>
+                <span asp-validation-for="TermsAccepted" class="error-message"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+        </form>
+
+        <div class="auth-divider">
+            <span>OR</span>
+        </div>
+
+        <div class="social-login">
+            <button class="btn btn-social btn-google">
+                <span class="social-icon">G</span>
+                Sign up with Google
+            </button>
+            <button class="btn btn-social btn-facebook">
+                <span class="social-icon">f</span>
+                Sign up with Facebook
+            </button>
+        </div>
+
+        <div class="auth-links">
+            <a asp-controller="Account" asp-action="Login">Already have an account? Login</a>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/images/logo.png" alt="TeamSync Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" && ViewContext.RouteData.Values["Controller"].ToString() == "Home" ? "active" : "")">Home</a></li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li><a asp-controller="Dashboard" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Dashboard" ? "active" : "")">Dashboard</a></li>
+                    <li><a asp-controller="Team" asp-action="Index" class="@(ViewContext.RouteData.Values["Controller"].ToString() == "Team" ? "active" : "")">Teams</a></li>
+                    <li><a asp-controller="Account" asp-action="Logout">Logout</a></li>
+                }
+                else
+                {
+                    <li><a asp-controller="Account" asp-action="Login" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Login" ? "active" : "")">Login</a></li>
+                    <li><a asp-controller="Account" asp-action="Register" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Register" ? "active" : "")">Sign Up</a></li>
+                }
+                <li><a asp-controller="Home" asp-action="About" class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="~/images/logo-small.png" alt="TeamSync Logo">
+                <p>TeamSync © @DateTime.Now.Year</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><a asp-controller="Dashboard" asp-action="Index">Dashboard</a></li>
+                        <li><a asp-controller="Account" asp-action="Logout">Logout</a></li>
+                    }
+                    else
+                    {
+                        <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+                        <li><a asp-controller="Account" asp-action="Register">Sign Up</a></li>
+                    }
+                    <li><a asp-controller="Home" asp-action="About">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@teamsync.com</p>
+                <p>Phone: +966 12 345 6789</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/script.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

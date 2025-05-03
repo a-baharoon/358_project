@@ -1,0 +1,63 @@
+﻿@model TeamSync.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section class="auth-section">
+    <h1>Login to Your Account</h1>
+    <div class="auth-container">
+        <form asp-action="Login" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" placeholder="Enter your email" value="@ViewBag.RememberedEmail" />
+                <span asp-validation-for="Email" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" placeholder="Enter your password" />
+                <span asp-validation-for="Password" class="error-message"></span>
+            </div>
+
+            <div class="form-group remember-me">
+                <input asp-for="RememberMe" />
+                <label asp-for="RememberMe"></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Login</button>
+
+            @if (ViewBag.RegistrationSuccess != null)
+            {
+                <div class="message-box success">
+                    Registration successful! You can now login with your new account.
+                </div>
+            }
+        </form>
+
+        <div class="auth-divider">
+            <span>OR</span>
+        </div>
+
+        <div class="social-login">
+            <button class="btn btn-social btn-google">
+                <span class="social-icon">G</span>
+                Login with Google
+            </button>
+            <button class="btn btn-social btn-facebook">
+                <span class="social-icon">f</span>
+                Login with Facebook
+            </button>
+        </div>
+
+        <div class="auth-links">
+            <a href="#" id="forgot-password">Forgot password?</a>
+            <a asp-controller="Account" asp-action="Register">Don't have an account? Sign up</a>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

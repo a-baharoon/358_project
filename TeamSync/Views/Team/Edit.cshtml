@@ -1,0 +1,41 @@
+﻿<!-- Views/Team/Edit.cshtml -->
+@model TeamSync.ViewModels.TeamViewModel
+@{
+    ViewData["Title"] = "Edit Team - TeamSync";
+}
+
+<div class="form-container">
+    <h1>Edit Team</h1>
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="message-box error"></div>
+        <input type="hidden" asp-for="TeamId" />
+
+        <div class="form-group">
+            <label asp-for="TeamName"></label>
+            <input asp-for="TeamName" class="form-control" />
+            <span asp-validation-for="TeamName" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Description" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="teamLogo">Team Logo</label>
+            <input type="file" id="teamLogo" name="teamLogo" accept="image/*" class="form-control" />
+            <small class="form-text text-muted">Leave empty to keep the current logo</small>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+            <a asp-action="Details" asp-route-id="@Model.TeamId" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,71 @@
+﻿<!-- Views/Home/Index.cshtml -->
+@{
+    ViewData["Title"] = "TeamSync - Boost Your Team Productivity";
+}
+
+<section class="hero">
+    <div class="hero-content">
+        <h1 id="dynamicTitle">Revolutionize Your Team Collaboration</h1>
+        <p>TeamSync helps college students to track time, stay focused, and enhance productivity with friendly competition.</p>
+        <div class="cta-buttons">
+            <a asp-controller="Account" asp-action="Register" class="btn btn-primary">Get Started</a>
+            <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="~/images/hero-image.png" alt="Students working together using TeamSync">
+    </div>
+</section>
+
+<section id="how-it-works" class="how-it-works">
+    <h2>How TeamSync Works</h2>
+    <div class="steps-container">
+        <article class="step">
+            <div class="step-icon">1</div>
+            <h3>Set Up Your Team</h3>
+            <p>Create a team, invite members, and assign a team leader who can monitor progress.</p>
+        </article>
+        <article class="step">
+            <div class="step-icon">2</div>
+            <h3>Start Your Timer</h3>
+            <p>Begin your work session with our interactive timer. Work until completion or set time limits.</p>
+        </article>
+        <article class="step">
+            <div class="step-icon">3</div>
+            <h3>Stay Motivated</h3>
+            <p>Random audio alerts keep you engaged and focused on your tasks.</p>
+        </article>
+        <article class="step">
+            <div class="step-icon">4</div>
+            <h3>Track Progress</h3>
+            <p>View your team's leaderboard to see who's putting in the most hours and celebrate achievements.</p>
+        </article>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Dynamic text change
+            const titles = [
+                "Revolutionize Your Team Collaboration",
+                "Make Teamwork Fun and Productive",
+                "Track Time, Boost Productivity",
+                "The Smart Way to Work Together"
+            ];
+
+            let currentTitleIndex = 0;
+            const heroTitle = $("#dynamicTitle");
+
+            setInterval(() => {
+                currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+
+                // Fade out
+                heroTitle.fadeOut(300, function() {
+                    // Change text and fade in
+                    heroTitle.text(titles[currentTitleIndex]).fadeIn(300);
+                });
+            }, 5000);
+        });
+    </script>
+}

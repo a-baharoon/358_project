@@ -1,0 +1,217 @@
+﻿<!-- Views/Dashboard/StartTimer.cshtml -->
+@{
+    ViewData["Title"] = "Timer - TeamSync";
+}
+
+<div class="timer-container">
+    <div class="timer-header">
+        <h1>Work Session Timer</h1>
+    </div>
+
+    <div class="timer-display">
+        <div id="timer">00:00:00</div>
+    </div>
+
+    <div class="timer-controls">
+        <button id="start-timer" class="btn btn-primary">Start</button>
+        <button id="stop-timer" class="btn btn-danger" disabled>Stop</button>
+        <button id="reset-timer" class="btn btn-secondary">Reset</button>
+    </div>
+
+    <div id="alert-message" class="alert-message"></div>
+
+    <div id="reflection-prompt" class="reflection-prompt">
+        <form asp-action="StopTimer" method="post">
+            <h3>Session Completed</h3>
+            <div class="form-group">
+                <label for="teamId">Team (optional)</label>
+                <select id="teamId" name="teamId" class="form-control">
+                    <option value="">Personal Session</option>
+                    @foreach (var team in ViewBag.UserTeams ?? new List<TeamSync.Models.Team>())
+                    {
+                            <option value="@team.TeamId">@team.TeamName</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tasksCompleted">Tasks Completed</label>
+                <input type="number" id="tasksCompleted" name="tasksCompleted" class="form-control" min="0" value="0" />
+            </div>
+
+            <div class="form-group">
+                <label for="reflectionNotes">Reflection Notes</label>
+                <textarea id="reflectionNotes" name="reflectionNotes" class="form-control" 
+                    placeholder="What did you accomplish? What worked well? What could be improved?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save Session</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Timer functionality
+                const timerElement = document.getElementById('timer');
+                const startButton = document.getElementById('start-timer');
+                const stopButton = document.getElementById('stop-timer');
+                const resetButton = document.getElementById('reset-timer');
+                const reflectionPrompt = document.getElementById('reflection-prompt');
+
+                let seconds = 0;
+                let minutes = 0;
+                let hours = 0;
+                let timerInterval;
+                let isRunning = false;
+
+                // Audio alerts array
+                const audioAlerts = [
+                    { message: "Keep up the good work!", sound: "alert1.mp3" },
+                    { message: "Stay focused on your task!", sound: "alert2.mp3" },
+                    { message: "Great progress, keep going!", sound: "alert3.mp3" },
+                    { message: "Don't give up now, you're doing great!", sound: "alert4.mp3" }
+                ];
+
+                // Function to update the timer display
+                function updateTimer() {
+                    seconds++;
+
+                    if (seconds >= 60) {
+                        seconds = 0;
+                        minutes++;
+
+                        if (minutes >= 60) {
+                            minutes = 0;
+                            hours++;
+                        }
+                    }
+
+                    // Format the time
+                    const formattedTime = 
+                        (hours < 10 ? "0" + hours : hours) + ":" +
+                        (minutes < 10 ? "0" + minutes : minutes) + ":" +
+                        (seconds < 10 ? "0" + seconds : seconds);
+
+                    timerElement.textContent = formattedTime;
+
+                    // Random alerts (approx every 5-15 minutes)
+                    if (minutes > 0 && seconds === 0 && Math.random() < 0.2) {
+                        triggerRandomAlert();
+                    }
+                }
+
+                // Function to trigger a random alert
+                function triggerRandomAlert() {
+                    const randomIndex = Math.floor(Math.random() * audioAlerts.length);
+                    const alert = audioAlerts[randomIndex];
+
+                    // Display the alert message
+                    const alertElement = document.getElementById('alert-message');
+                    if (alertElement) {
+                        alertElement.textContent = alert.message;
+                        alertElement.classList.add('show');
+
+                        // Hide the alert after 5 seconds
+                        setTimeout(() => {
+                            alertElement.classList.remove('show');
+                        }, 5000);
+                    }
+
+                    // Play the alert sound (if available)
+                    console.log("Playing sound: " + alert.sound);
+                }
+
+                // Start timer function
+                function startTimer() {
+                    if (!isRunning) {
+                        isRunning = true;
+                        timerInterval = setInterval(updateTimer, 1000);
+                        startButton.disabled = true;
+                        stopButton.disabled = false;
+
+                        // Store session start time in browser localStorage as backup
+                        if (typeof(Storage) !== "undefined") {
+                            localStorage.setItem("timerStartTime", new Date().toISOString());
+                        }
+                    }
+                }
+
+                // Stop timer function
+                function stopTimer() {
+                    if (isRunning) {
+                        isRunning = false;
+                        clearInterval(timerInterval);
+                        startButton.disabled = false;
+                        stopButton.disabled = true;
+
+                        // Show reflection prompt when timer stops
+                        if (reflectionPrompt) {
+                            reflectionPrompt.classList.add('show');
+                        }
+                    }
+                }
+
+                // Reset timer function
+                function resetTimer() {
+                    stopTimer();
+                    seconds = 0;
+                    minutes = 0;
+                    hours = 0;
+                    timerElement.textContent = "00:00:00";
+
+                    // Hide reflection prompt
+                    if (reflectionPrompt) {
+                        reflectionPrompt.classList.remove('show');
+                    }
+
+                    // Clear localStorage backup
+                    if (typeof(Storage) !== "undefined") {
+                        localStorage.removeItem("timerStartTime");
+                    }
+                }
+
+                // Event listeners
+                if (startButton) {
+                    startButton.addEventListener('click', startTimer);
+                }
+
+                if (stopButton) {
+                    stopButton.addEventListener('click', stopTimer);
+                }
+
+                if (resetButton) {
+                    resetButton.addEventListener('click', resetTimer);
+                }
+
+                // Check if there was a previously running timer (page refresh)
+                if (typeof(Storage) !== "undefined") {
+                    const storedStartTime = localStorage.getItem("timerStartTime");
+                    if (storedStartTime) {
+                        const startTime = new Date(storedStartTime);
+                        const currentTime = new Date();
+                        const elapsedSeconds = Math.floor((currentTime - startTime) / 1000);
+
+                        if (elapsedSeconds > 0) {
+                            // Calculate hours, minutes, seconds
+                            hours = Math.floor(elapsedSeconds / 3600);
+                            minutes = Math.floor((elapsedSeconds % 3600) / 60);
+                            seconds = elapsedSeconds % 60;
+
+                            // Update timer display
+                            const formattedTime = 
+                                (hours < 10 ? "0" + hours : hours) + ":" +
+                                (minutes < 10 ? "0" + minutes : minutes) + ":" +
+                                (seconds < 10 ? "0" + seconds : seconds);
+
+                            timerElement.textContent = formattedTime;
+
+                            // Automatically restart timer
+                            startTimer();
+                        }
+                    }
+                }
+            });
+        </script>
+}

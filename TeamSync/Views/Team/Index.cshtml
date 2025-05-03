@@ -1,0 +1,51 @@
+﻿<!-- Views/Team/Index.cshtml -->
+@model List<TeamSync.Models.Team>
+@{
+    ViewData["Title"] = "My Teams - TeamSync";
+}
+
+<div class="teams-container">
+    <div class="teams-header">
+        <h1>My Teams</h1>
+        <a asp-action="Create" class="btn btn-primary">Create New Team</a>
+    </div>
+
+    @if (Model.Any())
+    {
+            <div class="teams-grid">
+            @foreach (var team in Model)
+            {
+                        <div class="team-card">
+                    @if (!string.IsNullOrEmpty(team.TeamLogoPath))
+                    {
+                                    <img src="~/@team.TeamLogoPath" alt="@team.TeamName Logo" class="team-logo" />
+                    }
+                    else
+                    {
+                                    <div class="team-logo-placeholder">@team.TeamName.Substring(0, 1)</div>
+                    }
+                            <h3>@team.TeamName</h3>
+                            <p>@(string.IsNullOrEmpty(team.Description) ? "No description" : team.Description)</p>
+                            <div class="team-card-actions">
+                                <a asp-action="Details" asp-route-id="@team.TeamId" class="btn btn-sm">View Team</a>
+                        @if (team.TeamLeaderId == int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value))
+                        {
+                                        <a asp-action="Edit" asp-route-id="@team.TeamId" class="btn btn-sm btn-secondary">Edit</a>
+                        }
+                            </div>
+                        </div>
+            }
+            </div>
+    }
+    else
+    {
+            <div class="empty-state">
+                <p>You haven't joined any teams yet.</p>
+                <div class="empty-state-actions">
+                    <a asp-action="Create" class="btn btn-primary">Create a Team</a>
+                    <span>or</span>
+                    <a asp-action="Join" class="btn btn-secondary">Join a Team</a>
+                </div>
+            </div>
+    }
+</div>

@@ -1,0 +1,113 @@
+﻿@model TeamSync.ViewModels.DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h1>Welcome, @Model.UserProfile.FullName!</h1>
+
+        @if (TempData["TimerSuccess"] != null)
+        {
+            <div class="message-box success">
+                @TempData["TimerSuccess"]
+            </div>
+        }
+    </div>
+
+    <div class="dashboard-stats">
+        <div class="stat-card">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-value">@Model.TotalHoursWorked.ToString("F1")</div>
+            <div class="stat-label">Hours Worked</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">✓</div>
+            <div class="stat-value">@Model.TasksCompleted</div>
+            <div class="stat-label">Tasks Completed</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-value">@(Model.Teams?.Count ?? 0)</div>
+            <div class="stat-label">Teams</div>
+        </div>
+    </div>
+
+    <div class="dashboard-actions">
+        <a asp-action="StartTimer" class="btn btn-primary">Start Working</a>
+        <a asp-controller="Team" asp-action="Create" class="btn btn-secondary">Create Team</a>
+    </div>
+
+    <div class="dashboard-main">
+        <div class="dashboard-section">
+            <h2>Your Teams</h2>
+            @if (Model.Teams != null && Model.Teams.Any())
+            {
+                <div class="teams-grid">
+                    @foreach (var team in Model.Teams)
+                    {
+                        <div class="team-card">
+                            @if (!string.IsNullOrEmpty(team.TeamLogoPath))
+                            {
+                                <img src="~/@team.TeamLogoPath" alt="@team.TeamName Logo" class="team-logo" />
+                            }
+                            else
+                            {
+                                <div class="team-logo-placeholder">@(team.TeamName?.Length > 0 ? team.TeamName[0].ToString() : "T")</div>
+                            }
+                            <h3>@team.TeamName</h3>
+                            <p>@(string.IsNullOrEmpty(team.Description) ? "No description" : team.Description)</p>
+                            <a asp-controller="Team" asp-action="Details" asp-route-id="@team.TeamId" class="btn btn-sm">View Team</a>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="empty-state">
+                    <p>You haven't joined any teams yet.</p>
+                    <a asp-controller="Team" asp-action="Create" class="btn btn-secondary">Create a Team</a>
+                    <span>or</span>
+                    <a asp-controller="Team" asp-action="Join" class="btn btn-secondary">Join a Team</a>
+                </div>
+            }
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Recent Work Sessions</h2>
+            @if (Model.RecentSessions != null && Model.RecentSessions.Any())
+            {
+                <table class="sessions-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Team</th>
+                            <th>Duration</th>
+                            <th>Tasks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var session in Model.RecentSessions)
+                        {
+                            <tr>
+                                <td>@session.StartTime.ToString("MMM dd, yyyy")</td>
+                                <td>@(session.Team?.TeamName ?? "Personal")</td>
+                                <td>@(session.DurationMinutes.HasValue ? $"{session.DurationMinutes / 60}h {session.DurationMinutes % 60}m" : "In progress")</td>
+                                <td>@session.TasksCompleted</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="empty-state">
+                    <p>You haven't recorded any work sessions yet.</p>
+                    <a asp-action="StartTimer" class="btn btn-primary">Start Working</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,646 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\data\\teamsynccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\data\\teamsynccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\viewmodels\\teamdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\viewmodels\\teamdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\models\\worksession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\models\\worksession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\models\\userteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\models\\userteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\teamsync.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\teamsync.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\team\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\team\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\test\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\test\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\test\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\test\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\team\\join.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\team\\join.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\team\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\team\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\team\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\team\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\team\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\team\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\team\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\team\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\viewmodels\\teamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\viewmodels\\teamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\dashboard\\starttimer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\dashboard\\starttimer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|c:\\users\\gaming pc\\source\\repos\\teamsync\\teamsync\\migrations\\20250503123215_initialdatabasesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A96977C2-3F4E-435C-A6F2-98D8022E82DD}|TeamSync\\TeamSync.csproj|solutionrelative:teamsync\\migrations\\20250503123215_initialdatabasesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T13:56:16.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "TeamSync\\wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "TeamSync\\wwwroot\\css\\styles.css",
+              "ViewState": "AgIAAOkDAAAAAAAAAAAiwLIDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-02T20:24:51.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAwwDoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T19:46:01.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20250503123215_InitialDatabaseSetup.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Migrations\\20250503123215_InitialDatabaseSetup.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Migrations\\20250503123215_InitialDatabaseSetup.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Migrations\\20250503123215_InitialDatabaseSetup.cs",
+              "RelativeToolTip": "TeamSync\\Migrations\\20250503123215_InitialDatabaseSetup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T12:32:15.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "TeamSync\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "TeamSync\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-03T12:40:57.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserTeam.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\UserTeam.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Models\\UserTeam.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\UserTeam.cs",
+              "RelativeToolTip": "TeamSync\\Models\\UserTeam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:41:12.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\Team.cs",
+              "RelativeToolTip": "TeamSync\\Models\\Team.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:40:41.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\User.cs",
+              "RelativeToolTip": "TeamSync\\Models\\User.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:39:53.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\appsettings.json",
+              "RelativeDocumentMoniker": "TeamSync\\appsettings.json",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\appsettings.json",
+              "RelativeToolTip": "TeamSync\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-03T12:18:17.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Program.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Program.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Program.cs",
+              "RelativeToolTip": "TeamSync\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T12:13:29.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:47:03.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\wwwroot\\js\\script.js",
+              "RelativeDocumentMoniker": "TeamSync\\wwwroot\\js\\script.js",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\wwwroot\\js\\script.js",
+              "RelativeToolTip": "TeamSync\\wwwroot\\js\\script.js",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-02T20:25:44.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeamSyncContext.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Data\\TeamSyncContext.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Data\\TeamSyncContext.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Data\\TeamSyncContext.cs",
+              "RelativeToolTip": "TeamSync\\Data\\TeamSyncContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwDQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T20:46:07.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAwwHAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:08:57.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WorkSession.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\WorkSession.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Models\\WorkSession.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\WorkSession.cs",
+              "RelativeToolTip": "TeamSync\\Models\\WorkSession.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:41:43.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeamDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\ViewModels\\TeamDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\ViewModels\\TeamDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\ViewModels\\TeamDetailsViewModel.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\ViewModels\\TeamDetailsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T20:14:02.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAwwKcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T20:04:39.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:48:32.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TeamSync.csproj",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\TeamSync.csproj",
+              "RelativeDocumentMoniker": "TeamSync\\TeamSync.csproj",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\TeamSync.csproj",
+              "RelativeToolTip": "TeamSync\\TeamSync.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-03T12:18:45.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "TeamSync\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T20:26:46.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:48:05.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAuwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:00:42.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T19:49:54.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "TeamSync\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T12:11:50.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\DashboardViewModel.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T20:07:03.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\TeamController.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\TeamController.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\TeamController.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\TeamController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T20:12:23.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Details.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Team\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Details.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Team\\Details.cshtml",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAwwH8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:18:37.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\TestController.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T21:16:00.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Test\\Index.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Test\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Test\\Index.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Test\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T21:16:36.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Test\\Result.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Test\\Result.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Test\\Result.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Test\\Result.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T21:16:54.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Join.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Join.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Team\\Join.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Join.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Team\\Join.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:24:05.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Delete.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Team\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Delete.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Team\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:23:50.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Team\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Edit.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Team\\Edit.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:23:32.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Create.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Team\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Create.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Team\\Create.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:23:11.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Index.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Team\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Team\\Index.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Team\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAkwDIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:17:57.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TeamViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\ViewModels\\TeamViewModel.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\ViewModels\\TeamViewModel.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\ViewModels\\TeamViewModel.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\ViewModels\\TeamViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T20:16:17.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StartTimer.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Dashboard\\StartTimer.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Dashboard\\StartTimer.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Dashboard\\StartTimer.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Dashboard\\StartTimer.cshtml",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAkwNgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T20:11:46.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TeamSync\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TeamSync\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAmwEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T19:45:18.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TeamSync\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Gaming Pc\\source\\repos\\TeamSync\\TeamSync\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TeamSync\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T19:43:59.07Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

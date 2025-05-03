@@ -1,0 +1,128 @@
+﻿@model TeamSync.ViewModels.TeamDetailsViewModel
+@{
+    ViewData["Title"] = Model.Team.TeamName + " - TeamSync";
+    var currentUserId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value ?? "0");
+    var isTeamLeader = Model.Team.TeamLeaderId == currentUserId;
+    var isMember = Model.Team.TeamMembers?.Any(m => m.UserId == currentUserId) ?? false;
+}
+
+<div class="team-details-container">
+    <div class="team-header">
+        <div class="team-info">
+            @if (!string.IsNullOrEmpty(Model.Team.TeamLogoPath))
+            {
+                <img src="~/@Model.Team.TeamLogoPath" alt="@Model.Team.TeamName Logo" class="team-logo" />
+            }
+            else
+            {
+                <div class="team-logo-placeholder">@(Model.Team.TeamName?.Length > 0 ? Model.Team.TeamName[0].ToString() : "T")</div>
+            }
+            <div>
+                <h1>@Model.Team.TeamName</h1>
+                <p class="team-details-metadata">Created @Model.Team.CreatedAt.ToString("MMM dd, yyyy") • Led by @Model.Team.TeamLeader?.FullName</p>
+                <p>@Model.Team.Description</p>
+            </div>
+        </div>
+        <div class="team-actions">
+            @if (isTeamLeader)
+            {
+                <a asp-action="Edit" asp-route-id="@Model.Team.TeamId" class="btn btn-secondary">Edit Team</a>
+                <a asp-action="Delete" asp-route-id="@Model.Team.TeamId" class="btn btn-danger">Delete Team</a>
+            }
+            else if (isMember)
+            {
+                <form asp-action="LeaveTeam" asp-route-id="@Model.Team.TeamId" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger">Leave Team</button>
+                </form>
+            }
+            else
+            {
+                <form asp-action="JoinTeam" asp-route-id="@Model.Team.TeamId" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-primary">Join Team</button>
+                </form>
+            }
+        </div>
+    </div>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="message-box error">
+            @TempData["Error"]
+        </div>
+    }
+
+    <div class="team-sections">
+        <div class="team-section">
+            <h2>Team Members (@(Model.Team.TeamMembers?.Count ?? 0))</h2>
+            <div class="team-members-list">
+                @if (Model.Team.TeamMembers != null && Model.Team.TeamMembers.Any())
+                {
+                    @foreach (var member in Model.Team.TeamMembers)
+                    {
+                        <div class="team-member-card">
+                            @if (!string.IsNullOrEmpty(member.ProfilePicturePath))
+                            {
+                                <img src="~/@member.ProfilePicturePath" alt="@member.FullName" class="member-avatar" />
+                            }
+                            else
+                            {
+                                <div class="member-avatar-placeholder">@(member.FullName?.Length > 0 ? member.FullName[0].ToString() : "U")</div>
+                            }
+                            <div class="member-info">
+                                <h3>@member.FullName</h3>
+                                <p>@member.University</p>
+                                @if (member.UserId == Model.Team.TeamLeaderId)
+                                {
+                                    <span class="team-leader-badge">Team Leader</span>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>No team members found.</p>
+                }
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Recent Activity</h2>
+            @if (Model.WorkSessions != null && Model.WorkSessions.Any())
+            {
+                <table class="team-activity-table">
+                    <thead>
+                        <tr>
+                            <th>Member</th>
+                            <th>Date</th>
+                            <th>Duration</th>
+                            <th>Tasks</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var session in Model.WorkSessions)
+                        {
+                            <tr>
+                                <td>@session.User.FullName</td>
+                                <td>@session.StartTime.ToString("MMM dd, yyyy")</td>
+                                <td>@(session.DurationMinutes.HasValue ? $"{session.DurationMinutes / 60}h {session.DurationMinutes % 60}m" : "In progress")</td>
+                                <td>@session.TasksCompleted</td>
+                                <td>@(string.IsNullOrEmpty(session.ReflectionNotes) ? "-" : session.ReflectionNotes)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="empty-state">
+                    <p>No work sessions recorded yet for this team.</p>
+                    <a asp-controller="Dashboard" asp-action="StartTimer" class="btn btn-primary">Start Working</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
